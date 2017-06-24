@@ -1,0 +1,19 @@
+MY_RECIPE
+- Ability to add a Recipe
+- Ability to Search for a Recipe
+- Recipe Info
+    . Name
+    . Category
+    . Image
+    . Prep time
+    . Cook time
+    . Yield
+    . Ingredients
+    . Method
+        1. Marinate the Shrimp
+        2. Cook the Shrimp
+        3. Heat the Tortillas
+        4. Build the Quesadillia
+        5. Cut it into triangles
+
+
