@@ -27,6 +27,7 @@ def search
     name = gets.chomp
     recipes = Recipe.where("name LIKE ?", "%#{name}%")
     #puts recipes.inspect
+
     if recipes.length == 0
         puts "Recipe not found"
     else

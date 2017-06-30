@@ -1,0 +1,37 @@
+<html><body style="background-color: lightblue;">
+<table border="1">
+        <tr style="font-weight: bold">
+            <th>Images</th>
+            <th>Names</th>
+            <th>Categories</th>
+            <th>Prep-Time</th>
+            <th>Cook-Time</th>
+            <th>Yields</th>
+            <th>Ingredients</th>
+            <th>Methods</th>
+        </tr>
+    <% @recipes.each do |recipe| %>
+        <tr>
+            <td>
+                <% if recipe.image == nil %>
+                    <img height="100" src="/blank2.png">
+                <% else %>
+                    <img height="100" src="<%= recipe.image %>">
+                <% end %>
+            </td>
+            <td>
+                <%= recipe.name %>
+                <a href="/edit?id=<%= recipe.id %>">Edit</a>
+            </td>
+            <td><%= recipe.category %></td>
+            <td><%= recipe.prep_time %></td>
+            <td><%= recipe.cook_time %></td>
+            <td><%= recipe.yields %></td>
+            <td><%= recipe.ingredients %></td>
+            <td><%= recipe.method %></td>
+        </tr>
+    <% end %>
+</table>
+
+</body>
+</html>
